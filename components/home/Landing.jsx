@@ -51,7 +51,7 @@ function Landing() {
         <img
           src="/images/landingPage/Rectangle.png"
           alt="hero"
-          className=" object-cover w-full h-[500px] lg:h-[750px] z-0 "
+          className=" object-cover w-full h-[750px] z-0 "
         />
         <img
           src="/images/landingPage/circle.png"
@@ -120,10 +120,10 @@ function Landing() {
       <Cards/>
      {
       isopen &&
-      <div className="w-full h-[120px] z-50 bg-white fixed border-t border-zinc-300 bottom-0  flex justify-center">
+      <div className="md:flex hidden w-full h-full md:h-[120px] z-50 bg-white fixed border-t border-zinc-300 bottom-0   justify-center ">
                     <div className="container px-10 flex items-center justify-evenly">
-                      <p className="w-[60%] font-inter">By clicking “<span className="font-bold">Accept All Cookies</span>”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. View our <Link className="text-blue underline" href="">Privacy Policy</Link> for more information.</p>
-                      <div className="grid grid-cols-4 font-mono gap-4">
+                      <p className="md:w-[60%] w-[95%] font-inter">By clicking “<span className="font-bold">Accept All Cookies</span>”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. View our <Link className="text-blue underline" href="">Privacy Policy</Link> for more information.</p>
+                      <div className="grid md:grid-cols-4 grid-cols-2 font-mono gap-4">
                         <Link href="#" className="text-blue underline text-[1.125rem] py-2">
                           Preference
                         </Link>

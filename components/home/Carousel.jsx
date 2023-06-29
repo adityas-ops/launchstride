@@ -134,8 +134,8 @@ function Carousel() {
        }
   </SplideTrack>
 
-<div className='absolute w-full top-[-10%] md:top-[-16%] flex justify-end'>
-  <div className="splide__arrows md:w-[10%] w-[20%] relative">
+<div className='absolute w-full top-[-8%] md:top-[-16%] flex justify-end'>
+  <div className="splide__arrows md:w-[10%] w-[40%] relative">
     <button className=" splide__arrow--prev   p-2 border border-zinc-300 cursor-pointer mx-1">
        <BsArrowRight className='text-xl font-[400]'/>
     </button>

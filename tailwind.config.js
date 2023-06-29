@@ -13,7 +13,10 @@ module.exports = {
         "black-9":"rgba(14, 14, 14, 0.9)",
         "white-primary":"rgba(255, 255, 255, 1)",
         "white-secondary":"rgba(215, 215, 215, 1)",
-        "black-primary":"rgba(44, 44, 44, 0.8)"
+        "black-primary":"rgba(44, 44, 44, 0.8)",
+        customYellow: "#FDD94C",
+        customPurple: "#F291F4",
+        customGreen: "#7EE398",
       },
       fontFamily:{
         "Whyte":['Whyte Inktrap'],

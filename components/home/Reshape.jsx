@@ -1,28 +1,36 @@
-import Link from "next/link";
-import React from "react";
-import { PiArrowUpRightLight } from "react-icons/pi";
+
+import React, { useState } from "react";
+
 function Reshape() {
   const data = [
     {
       small:
         "https://uploads-ssl.webflow.com/62bed0ddd092e0137a3c12f6/62c46a58a5995dd67f1bca8c_arrow_small_work.svg",
       title: "WORK",
-      color: "#FDD94C",
+      color: "customYellow",
     },
     {
       small:
         "https://uploads-ssl.webflow.com/62bed0ddd092e0137a3c12f6/62c46a587fc6a7f244b7dd70_arrow_small_entertainment.svg",
       title: "PLAY",
-      color: "#F291F4",
+      color: "customPurple",
     },
     {
       small:
         "https://uploads-ssl.webflow.com/62bed0ddd092e0137a3c12f6/62c46a586073de2ffb644d0c_arrow_small_education.svg",
       title: "LEARN",
-      color: "#7EE398",
+      color: "customGreen",
     },
   ];
-  const [isHovered, setIsHovered] = React.useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
 
   return (
     <>
@@ -39,24 +47,23 @@ function Reshape() {
                     key={index}
                     className={` w-full h-fit border-b border-zinc-300 mt-6`}
                   >
-                    <Link
-                      href="#"
+                    <div
+                      // href="#"
                       className={`
                         flex
                         items-start
                         justify-between
-                        hover:bg-[${item.color}]
+                        bg-white
+                        hover:bg-${item.color}
                         h-fit
                         man
                         p-4
                         rounded-[10px]
                         mb-6
-                        ${isHovered && 
-                          `bg-[${item.color}]`
-                        }
-                      }`}
-                      onMouseEnter={() => setIsHovered(true)}
-                      onMouseLeave={() => setIsHovered(false)}
+                     `}
+                   
+
+             
                     >
                       <p className=" font-Whyte md:text-[8rem] text-[6rem] p-0 mt-14 leading-[80px]">
                         {item.title}
@@ -70,10 +77,10 @@ function Reshape() {
                         <img
                           src="https://uploads-ssl.webflow.com/62bed0ddd092e0137a3c12f6/62cc48afee820677aa3b2be9_journey_arrow_large.svg"
                           alt="Image 2"
-                          className="large transition duration-300 ease-in-out opacity-0  absolute top-0 right-0 "
+                          className="large transition duration-300 ease-in-out opacity-0  absolute top-0 right-0 h-[90px] md:h-[120px]"
                         />
                       </div>
-                    </Link>
+                    </div>
                   </div>
                 </>
               );
