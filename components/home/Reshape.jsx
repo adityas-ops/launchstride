@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 function Reshape() {
@@ -40,37 +41,16 @@ function Reshape() {
             WHICH WORLD ARE YOU RESHAPING?
           </p>
           <div className="w-full h-full pt-[3rem]">
-            {data.map((item, index) => {
-              return (
-                <>
-                  <div
-                    key={index}
-                    className={` w-full h-fit border-b border-zinc-300 mt-6`}
-                  >
-                    <div
-                      // href="#"
-                      className={`
-                        flex
-                        items-start
-                        justify-between
-                        bg-white
-                        hover:bg-${item.color}
-                        h-fit
-                        man
-                        p-4
-                        rounded-[10px]
-                        mb-6
-                     `}
-                   
-
-             
-                    >
+          <div  className={` w-full h-fit border-b border-zinc-300 mt-6`}>
+                    <Link
+                      href="#"
+                      className={`flex items-start justify-between  bg-white hover:bg-customYellow h-fit man p-4 rounded-[10px] mb-6`}>
                       <p className=" font-Whyte md:text-[8rem] text-[6rem] p-0 mt-14 leading-[80px]">
-                        {item.title}
+                      WORK
                       </p>
                       <div className="group w-full h-full relative">
                         <img
-                          src={item.small}
+                          src= "https://uploads-ssl.webflow.com/62bed0ddd092e0137a3c12f6/62c46a58a5995dd67f1bca8c_arrow_small_work.svg"
                           alt="Image 1"
                           className="small transition duration-300 ease-in-out opacity-100  absolute top-0 right-0"
                         />
@@ -80,11 +60,53 @@ function Reshape() {
                           className="large transition duration-300 ease-in-out opacity-0  absolute top-0 right-0 h-[90px] md:h-[120px]"
                         />
                       </div>
-                    </div>
+                    </Link>
                   </div>
-                </>
-              );
-            })}
+                  {/*  card end */}
+                  <div  className={` w-full h-fit border-b border-zinc-300 mt-6`}>
+                    <Link
+                      href="#"
+                      className={`flex items-start justify-between  bg-white hover:bg-customPurple h-fit man p-4 rounded-[10px] mb-6`}>
+                      <p className=" font-Whyte md:text-[8rem] text-[6rem] p-0 mt-14 leading-[80px]">
+                      PLAY
+                      </p>
+                      <div className="group w-full h-full relative">
+                        <img
+                          src=  "https://uploads-ssl.webflow.com/62bed0ddd092e0137a3c12f6/62c46a587fc6a7f244b7dd70_arrow_small_entertainment.svg"
+                          alt="Image 1"
+                          className="small transition duration-300 ease-in-out opacity-100  absolute top-0 right-0"
+                        />
+                        <img
+                          src="https://uploads-ssl.webflow.com/62bed0ddd092e0137a3c12f6/62cc48afee820677aa3b2be9_journey_arrow_large.svg"
+                          alt="Image 2"
+                          className="large transition duration-300 ease-in-out opacity-0  absolute top-0 right-0 h-[90px] md:h-[120px]"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  {/* card end */}
+                  <div  className={` w-full h-fit border-b border-zinc-300 mt-6`}>
+                    <Link
+                      href="#"
+                      className={`flex items-start justify-between  bg-white hover:bg-customGreen h-fit man p-4 rounded-[10px] mb-6`}>
+                      <p className=" font-Whyte md:text-[8rem] text-[6rem] p-0 mt-14 leading-[80px]">
+                      LEARN
+                      </p>
+                      <div className="group w-full h-full relative">
+                        <img
+                          src=  "https://uploads-ssl.webflow.com/62bed0ddd092e0137a3c12f6/62c46a586073de2ffb644d0c_arrow_small_education.svg"
+                          alt="Image 1"
+                          className="small transition duration-300 ease-in-out opacity-100  absolute top-0 right-0"
+                        />
+                        <img
+                          src="https://uploads-ssl.webflow.com/62bed0ddd092e0137a3c12f6/62cc48afee820677aa3b2be9_journey_arrow_large.svg"
+                          alt="Image 2"
+                          className="large transition duration-300 ease-in-out opacity-0  absolute top-0 right-0 h-[90px] md:h-[120px]"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  
           </div>
         </div>
       </div>
