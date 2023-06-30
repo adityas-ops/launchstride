@@ -118,6 +118,7 @@ function Landing() {
       <Reshape/>
       <Carousel/>
       <Cards/>
+      {/*  for cokies  */}
      {
       isopen &&
       <div className="md:flex hidden w-full h-full md:h-[120px] z-50 bg-white fixed border-t border-zinc-300 bottom-0   justify-center ">
